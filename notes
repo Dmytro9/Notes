@@ -1,0 +1,93 @@
+* In form action can write redirect page to get clicking Send button
+ <form action="/chat.html">
+	<label>Display name</label>
+	<input type="text" name="username" placeholder="Display name" required>
+	<button>Join</button>
+ </form>
+
+
+
+
+
+
+ **** OOP ****
+
+class User {
+  constructor(name, age) {
+    this._name = name;
+    this._age = age;
+ }
+
+  get name() {
+    return this._name;	
+ } 
+
+  set name(newName) {
+    this._name = newName;	
+  } 
+}
+
+
+class Administrator exends User {
+  constructor(name, age, role) {
+    super(name, age)
+    this._role = role;
+ }
+
+  get role() {
+    return this._role;	
+ } 
+
+  set role(newRole) {
+    this._role = newRole;	
+  } 
+}
+
+const dima = new Administrator('Dima', 31, 'Admin');
+
+
+
+
+
+
+
+ **** CALLBACK ****
+makeHttpRequest('google.com', function (err, result) {
+  if (err) {
+    console.log('Oh boy, an error');
+  } else {
+    console.log(result);
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
